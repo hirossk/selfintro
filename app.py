@@ -1,13 +1,16 @@
 from flask import Flask,render_template,redirect
-
+import random
 
 app = Flask(__name__, static_folder="./static/")
 
 # 自己紹介Webページを作成しましょう
 
 @app.route('/')
-def loginform():
-    return render_template('index.html')
+def index():
+    # ランダムなカラーコードを作成
+    color = "#" + "".join([random.choice("0123456789ABCDEF") for j in range(6)])
+    # 生成されるのは#7890ABのようなコード
+    return render_template('index.html', color=color)
 
 @app.route('/link1')
 def link1():

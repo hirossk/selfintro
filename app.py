@@ -7,7 +7,6 @@ app = Flask(__name__, static_folder="./static/")
 
 @app.route('/')
 def loginform():
-
     return render_template('index.html')
 
 @app.route('/link1')

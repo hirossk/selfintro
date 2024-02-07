@@ -8,8 +8,9 @@ app = Flask(__name__, static_folder="./static/")
 @app.route('/')
 def index():
     # ランダムなカラーコードを作成
-    color = "#" + "".join([random.choice("0123456789ABCDEF") for j in range(6)])
+    # color = "#" + "".join([random.choice("0123456789ABCDEF") for j in range(6)])
     # 生成されるのは#7890ABのようなコード
+    color = "#FF00FF"
     return render_template('index.html', color=color)
 
 @app.route('/link1')

@@ -1,4 +1,10 @@
 /*==============
 CSSはこちらに
 ===============*/
-/*フレームとフォント*/
+p{
+    color: gray;
+    font-weight: bold;
+} 
+li{
+    color: red;
+}

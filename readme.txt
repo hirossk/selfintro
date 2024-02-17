@@ -13,6 +13,9 @@ step0
   venv環境の構築
   python -m venv selfintro
   pip install flask
+  pythonは用意されているモジュール（ライブラリ）が多く競合する可能性が高いため
+  独立した仮想環境を用意したほうがよい
+  
 step1
   リポジトリflasklogicの説明
   https://github.com/hirossk/flasklogic
